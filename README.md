@@ -1,2 +1,1 @@
-# BiteQR-landing
-1st draft, landing page
+1st draft
