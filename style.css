@@ -166,16 +166,14 @@ html{
    
 }
 .table-extra{
-    display: block;
     border: #fff solid 4px;
     align-items: center;
-
-    width: 1200px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
+    justify-content: center;
+    margin-bottom: 2vh;
+    padding: 1vh;
+      
 }
+
 
 .imgextra{
     max-width: 400px;
@@ -193,7 +191,7 @@ html{
     
 }
 .extracont-text{
-    width: 1000px;
+    
     margin-right: auto;
     margin-left: auto;
 }
@@ -207,12 +205,12 @@ html{
 }
 
 /*pricing*/
-.pricing{
-    margin: 2rem;
-}
+
 .card{
-    width: 300px;
+    
     border-radius: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 .card > button{
     background: #FFCD4A;
@@ -222,6 +220,7 @@ html{
     background: #000;
     color: #fff;
 }
+
 
 /**/
 .cont-delivery{
@@ -241,7 +240,8 @@ html{
 }
 
 .delivery-img > img{
-    width: 600px;
+    margin-top: 4vh;
+    width: 90%;
 }
 
 .cont-reserve{
@@ -251,10 +251,8 @@ html{
     margin-bottom: 2rem;
 }
 .reservation-img > img{
-    width: 450px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 70%;
+  
 }
 
 /**/
@@ -270,10 +268,16 @@ html{
     color: #fff;
   
 }
-.fin-table > .col{
+.fin-table > .col, .col-md-6{
     border: #fff solid 4px;
-    width: 300px;
+    
     justify-content: center;
+}
+
+/*restaurants*/
+.restaurantimg{
+    width: 10rem;
+    height: auto;
 }
 
 
@@ -312,4 +316,129 @@ footer > a{
   
   #myBtn:hover {
     background-color: #fa4a0c;
+  }
+
+
+  /*Responsive breakpoints*/
+
+  @media (max-width: 425px){
+    .maincont{
+        background: none;
+    }
+    .topinfo > button{
+    text-align: center;
+    border: #FA4A0C 4px solid;
+    font-size: 24px;
+    border-radius: 0%;
+    display: block;
+    padding: 10px 40px 10px 40px;
+    }
+    .topinfo > button:hover{
+    background-color: #fa4a0c;
+    color: #fff;
+}
+
+.cont5{
+    background-color: #FFCD4A;
+    margin-top: 200px;
+    padding: 20px;
+    
+   
+}
+.table-extra{
+    display: block;
+    border: #fff solid 4px;
+    align-items: center;
+
+    width: 00px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+.imgextra{
+    max-width: 200px;
+    max-height: auto;
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.table-extra > div > p{
+    width: auto;
+}
+
+.box-delivery{
+    margin: 0;
+
+}
+
+.delivery-img > img{
+    max-width: 100px;
+    
+}
+.reservation-img > img{
+    width: 100px;
+}
+
+.table-extra{
+    width: auto;
+}
+
+.span-3{
+    width: auto;
+}
+.span-4{
+    width: auto;
+}
+
+.tablesinfo > p{
+    font-size: 20px;
+    width: auto;
+    text-align: center;
+    
+}
+
+.table1{
+    border: 4px #000 solid;
+}
+.table1 > p{
+    margin-top:30px;
+    text-align: justify;
+    width: auto;
+}
+.table1 > p >  img{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.table2{
+    border: 4px #ffcd4a solid;
+}
+.table2 > p{
+    margin-top:30px;
+    text-align: justify;
+    width: auto;
+}
+.table2 > p >  img{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.fin-table  > div> div > p{
+    width: auto;
+}
+
+  
+}
+
+
+
+  @media (min-width: 768px){
+
+  }
+
+  @media (min-width: 992px){
+
   }
