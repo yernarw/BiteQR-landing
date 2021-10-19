@@ -5,12 +5,13 @@ html{
     text-decoration: none;
 }
 
+@media (min-width:1880px){
 .maincont{
     background: 
     url(img/qr.png) -8% / 400px,
     url(img/circles.png) 120% / 550px;
     background-repeat: no-repeat;
-}
+}}
 
 /*topinfo*/
 .topinfo > h1{ 
@@ -30,6 +31,7 @@ html{
     border-radius: 0%;
     display: block;
     padding: 10px 40px 10px 40px;
+    margin-bottom: 2em;
 }
 .topinfo > button:hover{
     background-color: #fa4a0c;
@@ -62,7 +64,7 @@ html{
 /*mid red info*/
 .cont2{
     background-color: #FA4A0C;
-    margin-top: 200px;
+    margin-top: 3em;
     padding: 20px;
 }
 .cont2 > h2{
@@ -104,10 +106,14 @@ html{
 }
 
 .table1{
-    border: 4px #000 solid;
+    border: 3px black solid;
 }
+.table2{
+    border: 4px #ffcd4a solid;
+}
+
 .table1 > p{
-    display: flex;
+    width: auto;
     margin-top:30px;
     text-align: justify;
 }
@@ -116,11 +122,9 @@ html{
     margin-right: 20px;
 }
 
-.table2{
-    border: 4px #ffcd4a solid;
-}
+
 .table2 > p{
-    display: flex;
+    width: auto;
     margin-top:30px;
     text-align: justify;
 }
@@ -135,12 +139,18 @@ html{
 
 /*scroller*/
 
+
 .img-slide{
     width: 280px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     
+}
+@media (max-width: 992px){
+    .img-slide{
+        display: none;
+    }
 }
 .table3{
     border: solid 4px #FA4A0C;
@@ -268,10 +278,13 @@ html{
     color: #fff;
   
 }
-.fin-table > .col, .col-md-6{
+.fin-table > .col, .col-md-5{
     border: #fff solid 4px;
     
     justify-content: center;
+}
+.fin-table > div > div > p{
+    width: auto;
 }
 
 /*restaurants*/
@@ -279,6 +292,7 @@ html{
     width: 10rem;
     height: auto;
 }
+
 
 
 /*footer*/
@@ -318,6 +332,27 @@ footer > a{
     background-color: #fa4a0c;
   }
 
+  .swiper{
+      margin-top: 2em;
+  }
+  .swiper-slide > img{
+      width: 30%;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  .swiper-slide> h4{
+      text-align: center;
+  }
+
+  .restaurants{
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    }
+    .restaurants > img{
+        margin: 1em;
+    }
 
   /*Responsive breakpoints*/
 
@@ -325,6 +360,15 @@ footer > a{
     .maincont{
         background: none;
     }
+    
+
+    .topinfo > h1 {
+        margin-bottom: 1em;   
+    }
+    .topinfo > h2{
+        margin-bottom: 2em;
+    }
+
     .topinfo > button{
     text-align: center;
     border: #FA4A0C 4px solid;
@@ -332,10 +376,21 @@ footer > a{
     border-radius: 0%;
     display: block;
     padding: 10px 40px 10px 40px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2em;
     }
     .topinfo > button:hover{
     background-color: #fa4a0c;
     color: #fff;
+}
+
+.cont2{
+    margin-top: 1em;
+}
+
+.topright > h3{
+    margin-top: 1em;
 }
 
 .cont5{
@@ -387,10 +442,12 @@ footer > a{
 }
 
 .span-3{
-    width: auto;
+    width: fit-content;
+    text-align: start;
 }
 .span-4{
-    width: auto;
+    width: fit-content;
+    text-align: start;
 }
 
 .tablesinfo > p{
@@ -400,9 +457,7 @@ footer > a{
     
 }
 
-.table1{
-    border: 4px #000 solid;
-}
+
 .table1 > p{
     margin-top:30px;
     text-align: justify;
@@ -413,9 +468,7 @@ footer > a{
     margin-right: 20px;
 }
 
-.table2{
-    border: 4px #ffcd4a solid;
-}
+
 .table2 > p{
     margin-top:30px;
     text-align: justify;
@@ -429,16 +482,159 @@ footer > a{
 .fin-table  > div> div > p{
     width: auto;
 }
-
-  
+.delivery-img{
+    display: none;
+}
+.reservation-img{
+    display: none;
+}
+.img-slide{
+    display: none;
+}
+.table3text > h3, p{
+    width: fit-content;
 }
 
 
+}
 
-  @media (min-width: 768px){
+@media (max-width: 768px){
+    .maincont{
+        background: none;
+    }
+    
 
-  }
+    .topinfo > h1 {
+        margin-bottom: 1em;
+    }
+    .topinfo > h2{
+        margin-bottom: 2em;
+    }
 
-  @media (min-width: 992px){
+    .topinfo > button{
+    text-align: center;
+    border: #FA4A0C 4px solid;
+    font-size: 24px;
+    border-radius: 0%;
+    display: block;
+    padding: 10px 40px 10px 40px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2em;
+    }
+    .topinfo > button:hover{
+    background-color: #fa4a0c;
+    color: #fff;
+}
+
+.cont2{
+    margin-top: 1em;
+}
+
+.topright > h3{
+    margin-top: 1em;
+}
+
+.cont5{
+    background-color: #FFCD4A;
+    margin-top: 200px;
+    padding: 20px;
+    
+   
+}
+.table-extra{
+    display: block;
+    border: #fff solid 4px;
+    align-items: center;
+
+    width: 00px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+.imgextra{
+    max-width: 200px;
+    max-height: auto;
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.table-extra > div > p{
+    width: auto;
+}
+
+.box-delivery{
+    margin: 0;
+
+}
+
+.delivery-img > img{
+    max-width: 100px;
+    
+}
+.reservation-img > img{
+    width: 100px;
+}
+
+.table-extra{
+    width: auto;
+}
+
+.span-3{
+    width: fit-content;
+    text-align: start;
+}
+.span-4{
+    width: fit-content;
+    text-align: start;
+}
+
+.tablesinfo > p{
+    font-size: 20px;
+    width: auto;
+    text-align: center;
+    
+}
+
+
+.table1 > p{
+    margin-top:30px;
+    text-align: justify;
+    width: auto;
+}
+.table1 > p >  img{
+    width: 20px;
+    margin-right: 20px;
+}
+
+
+.table2 > p{
+    margin-top:30px;
+    text-align: justify;
+    width: auto;
+}
+.table2 > p >  img{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.fin-table  > div> div > p{
+    width: auto;
+}
+.delivery-img{
+    display: none;
+}
+.reservation-img{
+    display: none;
+}
+.img-slide{
+    display: none;
+}
+.table3text > h3, p{
+    width: fit-content;
+}
 
   }

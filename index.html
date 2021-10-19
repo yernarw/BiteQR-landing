@@ -11,13 +11,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
     </head>
 
     <body>
         <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/icons/Vector 58.svg" alt="icon"></button>
         <header>
             <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
+                <div class="container-lg container-md">
                   <a class="navbar-brand" href="index.html"><img class="img-logo " src="img/logosvg.svg" alt="logo"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -44,19 +49,19 @@
         <main class="container-fluid maincont">
             <div class="container container-md container-sm mt-5">
                 <div class="row justify-content-center align-items-center">
-                    <div class="topinfo col-md-4">
+                    <div class="topinfo col-lg-4 col-sm-12">
                         <h1 >Создайте бесконтактное QR-меню для вашего заведения</h2>
                         <h2 >Получите безопасное, интерактивное меню или сайт доставки для заведения, которое сокращает до 30% сокращает расходы и на 20% повышает продажи</h2>
 
                         <button type="button" class="btn fw-bold mt-3" id="btn-discover"><a href="http://wa.me/77772155837" class="text-decoration-none text-dark">Оставьте заявку </a></button>
                     </div>
-                    <div class="topimg col-md-4">
+                    <div class="topimg col-lg-4 col-sm-6">
                         <div class="img-overlay imgphone">
                             <img src="img/mainphone.png" alt="intro img" class="img-fluid float-end">
                         
                         </div>
                     </div>
-                    <div class="topright col-md-4">
+                    <div class="topright col-lg-4 col-sm-6">
                         
                         <h3 > <img class="topicon" src="img/icons/Vector1.svg" alt="icon"> Не нужно загружать приложение</h3>
                         <h3 > <img class="topicon" src="img/icons/tap 1.svg" alt="icon"> Блюда и цены можно изменить в 2 клика</h3>
@@ -70,8 +75,8 @@
             <h2 class="text-white">С какими хлопатами сталкиваются владельцы <br> ресторанного и отельного бизнеса</h2>
 
             <div class="row justify-content-center">
-                <div class="col-md-auto p-5 midinfo row">
-                    <img src="img/icons/Group-1.svg" alt="icon" class="col-md-auto">
+                <div class="col-md-auto p-5 midinfo">
+                    <img src="img/icons/Group-1.svg" alt="icon">
                     <div class="col-md-auto">
                         <div class="span-3">Карантин уже принес серьезные убытки</div>
                         <p class="span-4">Выручка заведений упала на 50%, а расходы и налоги остались прежними - нужно сокрощать операционные расходы</p>
@@ -112,14 +117,14 @@
                 они получают доступ к меню и даже заказу через свой смартфон</p>
 
                 <div class="row gap-4 justify-content-center">
-                    <div class="col-md-5 table1">
+                    <div class="col-lg-5 table1">
                         <h3 class="text-center">Печатное меню</h3>
                         <p><img src="img/icons/eva_close-fill.svg" alt="#" > Нет возможности отдать под блюдо целую страницу, приблизить, чтобы лучше рассмотреть</p>
                         <p><img src="img/icons/eva_close-fill.svg" alt="#" > Чтобы найти нужное блюдо, приходится перелистывать все меню. Это замедляет процесс</p>
                         <p><img src="img/icons/eva_close-fill.svg" alt="#" > Отснять и распечатать бумажное меню стоит до Н-тыс тенге,и его нужно обновлять регулярно</p>
                         <p><img src="img/icons/eva_close-fill.svg" alt="#" > Поменялись цены? Выбыли позиии? В печатном меню невозможно поменять это быстро и без затрат</p>
                     </div>
-                    <div class="col-md-5 table2">
+                    <div class="col-lg-5 table2">
                         <h3 class="text-center">QR-меню</h3>
                         <p><img src="img/icons/mdi_checkbox-marked-circle.svg" alt="#" > Красивые фото в хорошем качестве позволяет гостю лучше разглядеть блюдо и пробуждает аппетит</p>
                         <p><img src="img/icons/mdi_checkbox-marked-circle.svg" alt="#" > Удобная навигация, Не нужно больше листать страницы в поисках блюда</p>
@@ -141,19 +146,19 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="d-block w-100" > 
-                        <div class="row justify-content-center mt-5 mb-5 ">
-                            <div class="col-5 table3text">
+                        <div class="row justify-content-center mt-5 mb-5">
+                            <div class="col-auto table3text">
                                 <h3>QR-меню упрощает и снижает расходы</h3>
                                     <p>Вам больше не нужно перепечатывать меню, когда оно испортилось или просто поменялось, обновили цены, добавили новинки - все редактируется онлайн в несколько кликов</p>
                             </div>
-                            <div class="col-5"><img src="img/Illustration - Finances.png" alt="slide img" class="img-slide"></div>
+                            <div class="col-auto"><img src="img/Illustration - Finances.png" alt="slide img" class="img-slide"></div>
                         </div>
                     </div> 
                   </div>
                   <div class="carousel-item">
                     <div class="d-block w-100" > 
                         <div class="row justify-content-center mt-5 mb-5 ">
-                            <div class="col-5 table3text">
+                            <div class="col-auto table3text">
                                 <h3>На 20-40% повышаются продажи и средний чек</h3>
                                     <p>Интерактивное меню как мини-приложение
                                         вашего заведения, в котором красочно и
@@ -162,42 +167,42 @@
                                         видит всё и заказывает больше. Гость сразу же
                                         оплачивает заказ, не дожидаясь официанта.</p>
                             </div>
-                            <div class="col-5"><img src="img/Illustration - Finances (1).png" alt="slide img" class="img-slide"></div>
+                            <div class="col-auto"><img src="img/Illustration - Finances (1).png" alt="slide img" class="img-slide"></div>
                         </div>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="d-block w-100" > 
                         <div class="row justify-content-center mt-5 mb-5 ">
-                            <div class="col-5 table3text">
+                            <div class="col-auto table3text">
                                 <h3>Не тратите деньги на
                                     разработку собственого сайта</h3>
                                     <p>Экономите на разработке и поддержке
                                         приложения и сайта — получаете решение
                                         ценностью в 1000€, всего от 10000тг в месяц</p>
                             </div>
-                            <div class="col-5"><img src="img/Illustration - support, technology, error _ deadline, stress, man, customer service.png" alt="slide img" class="img-slide"></div>
+                            <div class="col-auto"><img src="img/Illustration - support, technology, error _ deadline, stress, man, customer service.png" alt="slide img" class="img-slide"></div>
                         </div>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="d-block w-100" > 
                         <div class="row justify-content-center mt-5 mb-5 ">
-                            <div class="col-5 table3text">
+                            <div class="col-auto table3text">
                                 <h3>Не платите комиссию сервису</h3>
                                     <p>Вы оплачиваете сервис за месяц, как подписку
                                         на Netflix или абонплату за интернет.
                                         Мы не берем комиссию с заказов или
                                         обращений, вся прибыль остается у вас</p>
                             </div>
-                            <div class="col-5"><img src="img/Illustration - Shopping, e-commerce, sale _ store, shop, smartphone, discount, happy, savings, gift.png" alt="slide img" class="img-slide"></div>
+                            <div class="col-auto"><img src="img/Illustration - Shopping, e-commerce, sale _ store, shop, smartphone, discount, happy, savings, gift.png" alt="slide img" class="img-slide"></div>
                         </div>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="d-block w-100" > 
                         <div class="row justify-content-center mt-5 mb-5 ">
-                            <div class="col-5 table3text ">
+                            <div class="col-auto table3text ">
                                 <h3>Гостям не нужно
                                     скачивать приложение</h3>
                                     <p>Они сканируют QR-код, на экране появится
@@ -205,7 +210,7 @@
                                         онлайн-страницу с меню, где можно всё
                                         изучить даже с мобильного интернета</p>
                             </div>
-                            <div class="col-5"><img src="img/Illustration - Finance, e-commerce, startup, workflow _ account, information, user, profile, data.png" alt="slide img" class="img-slide"></div>
+                            <div class="col-auto"><img src="img/Illustration - Finance, e-commerce, startup, workflow _ account, information, user, profile, data.png" alt="slide img" class="img-slide"></div>
                         </div>
                     </div>
                   </div>
@@ -220,6 +225,11 @@
                 </button>
               </div>
         </div>
+    
+
+    
+
+      
 
 
         <div class="container-fluid cont5 mt-5" id="uslugi">
@@ -401,8 +411,8 @@
                 </div>
             </div>
             
-            <div class="row gap-4 fin-table pt-4 text-center">
-                <div class="col">
+            <div class="row gap-4 fin-table pt-4 justify-content-md-center text-center">
+                <div class="col-md-5 col-sm-12">
                     <h3>Маркетинг</h3>
                     <ul class="list-unstyled">
                         <li>Акции - покажи свои актуальные   предложения</li>
@@ -410,7 +420,7 @@
                         <li>Промо баннер - у вас скоро концерт или мероприятие? Проинформируйте</li>
                     </ul>
                 </div>
-                <div class="col">
+                <div class="col-md-5 col-sm-12">
                     <h3>Лояльность гостей</h3>
                     <ul class="list-unstyled">
                         <li>Превратите гостей вашего заведения в постоянных</li>
@@ -421,10 +431,10 @@
             </div>
 
             <div class="row fin-table pt-4 gap-4 justify-content-center">
-                <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="col-md-5 col-sm-12">
                     <h2 class="text-center">Зачем это вам?</h2>
                     <div>
-                        <h5>1.Довольный гость</h5>
+                        <h5>1. Довольный гость</h5>
                         <p>Одной кнопкой вы убираете кучу негативных моментов в обслуживании</p>
                         <h5>2. Повышается скорость обработки заказа</h5>
                         <p>Сокращаете время обслуживания, официант уже знает зачем его позвали</p>
@@ -432,10 +442,10 @@
                         <p>Система умеет отслеживать за какое время официант принял запрос и принял ли он</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="col-md-5 col-sm-12">
                     <h2 class="text-center">Зачем это персоналу?</h2>
                     <div>
-                        <h5>1.Хорошие отзывы / Чай!</h5>
+                        <h5>1. Хорошие отзывы / Чай!</h5>
                         <p>Довольные гости могут оставить чаевые и дать хороший отзыв</p>
                         <h5>2. С кнопкой легче и спокойней</h5>
                         <p>Полностью исключит моменты когда гость остается незамечанным или проигнорирован. Если что то нужно он нажмет кнопку а официант примет его</p>
@@ -447,9 +457,9 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container mb-4">
             <h2 class="fw-bold text-center mt-4">Уже более 200 зведений выбрало нас</h2>
-            <div class="d-flex flex-sm-row justify-content-between  mb-5 mt-5 restaurants">
+            <div class="d-md-flex d-sm-flex d-lg-flex justify-content-md-center justify-content-md-between restaurants">
                 <img src="img/restaurants/ploff.jpg" alt="restaurant" class="restaurantimg">
                 <img src="img/restaurants/fashionclub.jpg" alt="restaurant" class="restaurantimg">
                 <img src="img/restaurants/faust.jpg" alt="restaurant" class="restaurantimg">
@@ -494,6 +504,9 @@
 
         <script src="js/main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        
+        
     </body>
 
 </html>
