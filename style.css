@@ -278,7 +278,7 @@ html{
     color: #fff;
   
 }
-.fin-table > .col, .col-md-5{
+.fin-table > .fin-col, .fin-col1{
     border: #fff solid 4px;
     
     justify-content: center;
