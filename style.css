@@ -25,18 +25,23 @@ html{
     font-weight: lighter;
     margin-bottom: 20px;
 }
-.topinfo > button{
-    border: #FA4A0C 4px solid;
+.button{
+    border: #fa4a0c 4px solid;
     font-size: 24px;
     border-radius: 0%;
     display: block;
     padding: 10px 40px 10px 40px;
     margin-bottom: 2em;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
 }
-.topinfo > button:hover{
+.button:hover{
     background-color: #fa4a0c;
     color: #fff;
 }
+
 
 
 .img-logo{
@@ -76,8 +81,18 @@ html{
     display: flex;
 }
 .midinfo > img{
-    width: 80px;
+    width: 10%;
     margin-right: 30px;
+}
+@media(max-width:350px){
+    .midinfo > img {
+        display: none;
+    }
+}
+@media(max-width:500px){
+    .midinfo > img {
+        margin-right: 10px;
+    }
 }
 
 .span-3{
@@ -87,13 +102,21 @@ html{
     margin-top: 20px;
     margin-bottom: 20px;
     width: 400px;
-    text-align: justify;
+    text-align: start;
 }
 .span-4{
     color: #fff;
     font-size: 18px;
     width: 400px;
-    text-align: justify;
+    text-align: start;
+}
+@media (max-width:756px){
+    .span-3{
+        width: fit-content;
+    }
+    .span-4{
+        width: fit-content;
+    }
 }
 
 
@@ -204,14 +227,25 @@ html{
     
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 2em;
 }
-.extracontbtn > button{
+.extracontbtn{
+    border: #000 4px solid;
     background-color: #fff;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
     font-size: 24px;
+    padding: 10px 40px 10px 40px;
+    position: relative;
 }
-.extracontbtn > button:hover{
+.extracontbtn:hover{
+    border:#fff 4px solid;
     background-color: #000;
-    color: #FA4A0C;
+    color: #fff;
+    padding: 14px 44px 14px 44px;
+    
 }
 
 /*pricing*/
@@ -228,6 +262,19 @@ html{
 }
 .card > button:hover{
     background: #000;
+    color: #fff;
+}
+.btnprice{
+    border: #fff 4px solid;
+    background-color: #ffcd4a;
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 8px 24px 8px 24px;
+
+}
+.btnprice:hover{
+    background-color: #000;
     color: #fff;
 }
 
@@ -296,6 +343,9 @@ html{
 
 
 /*footer*/
+.footericon{
+    width: 24px;
+}
 .footer{
     background-color: #2d2d2d;
     padding: 50px;
@@ -369,21 +419,7 @@ footer > a{
         margin-bottom: 2em;
     }
 
-    .topinfo > button{
-    text-align: center;
-    border: #FA4A0C 4px solid;
-    font-size: 24px;
-    border-radius: 0%;
-    display: block;
-    padding: 10px 40px 10px 40px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 2em;
-    }
-    .topinfo > button:hover{
-    background-color: #fa4a0c;
-    color: #fff;
-}
+
 
 .cont2{
     margin-top: 1em;
@@ -441,14 +477,7 @@ footer > a{
     width: auto;
 }
 
-.span-3{
-    width: fit-content;
-    text-align: start;
-}
-.span-4{
-    width: fit-content;
-    text-align: start;
-}
+
 
 .tablesinfo > p{
     font-size: 20px;
@@ -498,7 +527,7 @@ footer > a{
 
 }
 
-@media (max-width: 768px){
+@media (max-width: 776px){
     .maincont{
         background: none;
     }
@@ -511,21 +540,7 @@ footer > a{
         margin-bottom: 2em;
     }
 
-    .topinfo > button{
-    text-align: center;
-    border: #FA4A0C 4px solid;
-    font-size: 24px;
-    border-radius: 0%;
-    display: block;
-    padding: 10px 40px 10px 40px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 2em;
-    }
-    .topinfo > button:hover{
-    background-color: #fa4a0c;
-    color: #fff;
-}
+
 
 .cont2{
     margin-top: 1em;
@@ -583,14 +598,7 @@ footer > a{
     width: auto;
 }
 
-.span-3{
-    width: fit-content;
-    text-align: start;
-}
-.span-4{
-    width: fit-content;
-    text-align: start;
-}
+
 
 .tablesinfo > p{
     font-size: 20px;
